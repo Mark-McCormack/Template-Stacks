@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "mern-stack": "apps/mern-stack",
+    "mern-stack-e2e": "apps/mern-stack-e2e"
+  }
+}
