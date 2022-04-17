@@ -13,6 +13,7 @@
 .project
 .classpath
 .c9/
+config.env
 *.launch
 .settings/
 *.sublime-workspace

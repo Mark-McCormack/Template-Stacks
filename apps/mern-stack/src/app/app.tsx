@@ -1,12 +1,16 @@
-import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
+import CreateComponent from './components/createComponent';
+import GetComponent from './components/getComponent';
+import UpdateComponent from './components/updateComponent';
+import DeleteComponent from './components/deleteComponent';
 
-export function App() {
+function App() {
   return (
-    <>
-      <NxWelcome title="mern-stack" />
-      <div />
-    </>
+    <div className="App">
+      <CreateComponent></CreateComponent>
+      <GetComponent></GetComponent>
+      <UpdateComponent></UpdateComponent>
+      <DeleteComponent></DeleteComponent>
+    </div>
   );
 }
 
