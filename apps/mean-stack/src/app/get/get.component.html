@@ -1,0 +1,7 @@
+<h1>Retrieve Component</h1>
+<button type="button" class="btn btn-primary" (click)="getUsers()">Retrieve Users</button>
+<div *ngFor="let user of this.usersList">
+    <p>{{user.name}}</p>
+    <p>{{user.age}}</p>
+    <p>{{user.username}}</p>
+</div>
