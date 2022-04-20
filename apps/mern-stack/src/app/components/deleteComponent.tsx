@@ -2,9 +2,11 @@ import { useState } from 'react';
 import Axios from 'axios';
 
 function DeleteComponent() {
+  // Variables with default values and their set functions
   const [name, setName] = useState('');
 
   const deleteUser = () => {
+    // Runs a DELETE Command to URL with data in object. Logs Data when its complete
     Axios.delete('http://localhost:3000/delete/deleteUser', {data: { name }}).then((response) => {
       console.log('User Deleted', response.data);
     });

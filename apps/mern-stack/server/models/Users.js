@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Defines the structure of an object in our Database
 const UsersSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -15,5 +16,8 @@ const UsersSchema = new mongoose.Schema({
   },
 });
 
+// Creates a Collection 'users' for our objects to be stored in
 const UserModel = new mongoose.model('users', UsersSchema);
+
+// Exports the Model Template for other files to use
 module.exports = UserModel;

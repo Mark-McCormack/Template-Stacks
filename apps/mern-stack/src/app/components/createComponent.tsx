@@ -2,12 +2,14 @@ import { useState } from 'react';
 import Axios from 'axios';
 
 function CreateComponent() {
+  // Variables with default values and their set functions
   const [name, setName] = useState('');
   const [age, setAge] = useState(0);
   const [username, setUsername] = useState('');
 
   const createUser = () => {
-    Axios.post('http://localhost:3000/create/createUser', { name, age, username}).then((response) => {
+    // Runs a POST Command to URL with data in object. Logs Data when its complete
+    Axios.post('http://localhost:3000/create/createUser', { name, age, username }).then((response) => {
       console.log('User Created', response.data);
     });
   };
