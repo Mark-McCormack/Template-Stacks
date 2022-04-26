@@ -1,6 +1,6 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import { createWebHistory, createRouter } from "vue-router";
+import { createApp } from 'vue';
+import App from './App.vue';
+import { createWebHistory, createRouter } from 'vue-router';
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 
@@ -12,30 +12,30 @@ import DeleteComponent from './components/DeleteComponent.vue';
 
 const routes = [
   {
-      name: 'home',
-      path: '/',
-      component: HomeComponent
+    name: 'home',
+    path: '/',
+    component: HomeComponent,
   },
   {
-      name: 'create',
-      path: '/create',
-      component: CreateComponent
+    name: 'create',
+    path: '/create',
+    component: CreateComponent,
   },
   {
-      name: 'get',
-      path: '/get',
-      component: GetComponent
+    name: 'get',
+    path: '/get',
+    component: GetComponent,
   },
   {
-      name: 'update',
-      path: '/update',
-      component: UpdateComponent
+    name: 'update',
+    path: '/update',
+    component: UpdateComponent,
   },
   {
-      name: 'delete',
-      path: '/delete',
-      component: DeleteComponent
-  }
+    name: 'delete',
+    path: '/delete',
+    component: DeleteComponent,
+  },
 ];
 
 const router = createRouter({

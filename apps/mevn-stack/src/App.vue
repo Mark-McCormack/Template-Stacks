@@ -1,18 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <CreateComponent/>
-  <GetComponent/>
-  <UpdateComponent/>
-  <DeleteComponent/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <CreateComponent />
+  <GetComponent />
+  <UpdateComponent />
+  <DeleteComponent />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import CreateComponent from './components/CreateComponent'
-import GetComponent from './components/GetComponent'
-import UpdateComponent from './components/UpdateComponent'
-import DeleteComponent from './components/DeleteComponent'
+import HelloWorld from './components/HelloWorld.vue';
+import CreateComponent from './components/CreateComponent';
+import GetComponent from './components/GetComponent';
+import UpdateComponent from './components/UpdateComponent';
+import DeleteComponent from './components/DeleteComponent';
 
 export default {
   name: 'App',
@@ -21,9 +21,9 @@ export default {
     CreateComponent,
     GetComponent,
     UpdateComponent,
-    DeleteComponent
-  }
-}
+    DeleteComponent,
+  },
+};
 </script>
 
 <style>
